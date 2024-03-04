@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  content: "";
+  background: #000;
+}
+
+body {
+  /* background: #000; */
+  color: #fff;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("/assets/IN-en-20240212-popsignuptwoweeks-perspective_alpha_website_large_feb_2024.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  background: rgb(0 0 0 / 40%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+nav > .Netflix-logo-png {
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: relative;
+  bottom: 15px;
+}
+
+.Netflix-logo-png {
+  position: relative;
+  left: 27px;
+  z-index: 3;
+  width: 12rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 90px;
+  cursor: pointer;
+  display: inline;
+}
+
+.sub-nav-itm {
+  display: flex;
+}
+
+.sign-in-btn {
+  height: 33px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  bottom: 4px;
+  right: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: sans-serif;
+  display: inline;
+  margin-top: 15px;
+}
+
+.sign-in-btn:hover {
+  color: #fff;
+  background-color: hsl(0, 87%, 38%);
+}
+
+.red {
+  cursor: pointer;
+}
+
+.header-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.header-content h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.email-form input {
+  flex: 1;
+  border: 0.01px solid #bab8b8;
+  outline: 0;
+  margin-left: 20px;
+  width: 400px;
+  height: 58px;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  justify-content: space-between;
+  margin-left: 12px;
+  overflow: unset;
+  outline: none;
+  text-align: left;
+  padding: 23px;
+  background: linear-gradient(rgba(23, 23, 23, 0.6), rgba(23, 23, 23, 0.6));
+}
+
+.email-form input:active {
+  outline: border;
+}
+
+.ip-em:focus::-webkit-input-placeholder {
+  font-size: 0.95em;
+  position: relative;
+  top: -10px;
+  transition: 0.2s ease-out;
+}
+
+.ip-em:-webkit-input-placeholder {
+  transition: 0.2s ease-in;
+}
+
+.ip-em input[type="email"]:focus {
+  height: 50px;
+  padding-bottom: 0px;
+  transition: 0.2s ease-in;
+}
+
+::-webkit-input-placeholder {
+  color: #bab8b8;
+}
+
+.email-form > button {
+  background: #db0001;
+
+  margin-top: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 550;
+  cursor: pointer;
+  padding: 12px 30px;
+  padding-bottom: 15px;
+  position: relative;
+  right: 0px;
+  top: 6px;
+}
+
+.sign-up-btn:hover {
+  color: #fff;
+  background-color: hsl(0, 87%, 38%);
+}
+
+.sign-up-btn > img {
+  overflow: hidden;
+  height: 27px;
+
+  position: relative;
+  top: 5px;
+}
+
+/* -------main features------ */
+.cards {
+  padding: 50px 12%;
+  font-size: 22px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.row,
+.row-1,
+.row-2 {
+  border-top: 8px rgb(69, 69, 69);
+  padding: 50px;
+  width: 100%;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  text-align: left;
+  align-items: center;
+  padding: 10px 10px 12px;
+  right: 20px;
+  bottom: 95px;
+}
+
+.text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 53px;
+}
+
+.text-col > h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  line-height: 100px;
+}
+
+.img-col {
+  flex-basis: 50%;
+  margin-bottom: 0px;
+  position: relative;
+  top: 80px;
+  left: 100px;
+}
+
+.img-col img {
+  position: relative;
+  z-index: 4;
+}
+
+.img-col > video {
+  position: relative;
+  bottom: 385px;
+  left: 80px;
+}
+
+.row-2 {
+  display: flex;
+  flex-basis: 50%;
+  text-align: left;
+  align-items: center;
+  padding: 10px 10px 12px;
+  position: relative;
+  left: -10px;
+  bottom: 200px;
+}
+
+.text-col-2 {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 740px;
+  bottom: 27px;
+  right: 805px;
+}
+
+.text-col-2 > h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 80px;
+  position: relative;
+  left: 115px;
+}
+
+.text-col-2 > p {
+  position: relative;
+  left: 116px;
+}
+
+.row-3 {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  text-align: left;
+  align-items: center;
+  padding: 10px 10px 12px;
+  right: 20px;
+  bottom: 220px;
+}
+
+.row-2 > img {
+  position: relative;
+  height: 400px;
+  right: -6px;
+}
+
+.img-col-2 > img {
+  position: relative;
+  top: 100px;
+  left: 185px;
+  z-index: 4;
+  height: 450px;
+}
+
+.img-col-2 video {
+  position: relative;
+  left: 300px;
+  bottom: 300px;
+  width: 60%;
+  z-index: 3;
+}
+
+.text-col-3 {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 740px;
+  bottom: 27px;
+  right: 735px;
+}
+
+.text-col-3 > h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 82px;
+}
+
+.img-col-2 {
+  position: relative;
+  right: 800px;
+}
+
+.text-col-4 {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 740px;
+  bottom: 520px;
+  right: 135px;
+}
+
+.text-col-4 > h2 {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 82px;
+}
+
+.row-4 > img {
+  position: relative;
+  right: 35px;
+  top: -215px;
+  height: 440px;
+}
+
+hr {
+  height: 8px;
+  background-color: #333131;
+  border: none;
+}
+
+.h1-2 {
+  position: relative;
+  right: 280px;
+  bottom: 233px;
+  width: 140%;
+}
+
+.h1-3 {
+  position: relative;
+  right: 280px;
+  width: 140%;
+  bottom: 162px;
+}
+
+.h1-4 {
+  position: relative;
+  bottom: 280px;
+  right: 280px;
+  width: 140%;
+}
+
+.h1-5 {
+  position: relative;
+  right: 280px;
+  width: 140%;
+  top: -330px;
+}
+
+.h1-6 {
+  margin-top: 180px;
+  position: relative;
+  width: 111.5%;
+  right: 180px;
+}
+
+.main_stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container {
+  margin-top: -270px;
+}
+
+.container > h2 {
+  display: block;
+  margin: auto;
+  text-align: center;
+  line-height: 75px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 3rem;
+  margin-bottom: 26px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: rgb(64, 64, 64);
+  background-color: #333131;
+  color: #eee;
+  cursor: pointer;
+  padding: 24px;
+  width: 100%;
+  height: 85px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 28px;
+}
+
+.main_stack > button > img {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: -43px;
+  left: 1055px;
+  bottom: 0px;
+  width: 49px;
+}
+
+.main_stack > button > .cr {
+  visibility: hidden;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+  background-color: #333131;
+  background-color: rgb(64, 64, 64);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 23px 18px;
+  background-color: rgb(64, 64, 64);
+  background-color: #333131;
+  display: none;
+  overflow: hidden;
+  color: white;
+  font-size: 24px;
+  position: relative;
+  bottom: 6.5px;
+}
+
+.email-Bf {
+  margin-top: 55px;
+  position: absolute;
+  left: 480px;
+}
+
+main::after {
+  /* content: ""; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 23px;
+}
+
+/* --------footer css------ */
+
+.ft-cont {
+  margin: 64px;
+  color: #bab8b8;
+}
+
+.ft-sub-cont {
+  /* margin: 34px; */
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.ft-sub-cont > ul,
+.sub-ul {
+  list-style: none;
+}
+
+.sub-ul {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.sub-ul li:nth-of-type(2) {
+  flex-shrink: 3;
+}
+
+.main-ul > li > a,
+.box-cont > div > li > a {
+  text-decoration: none;
+  color: #bab8b8;
+  text-decoration: underline;
+}
+
+.box-cont {
+  display: flex;
+  gap: 170px;
+}
+
+.a-active:active {
+  color: #db0001;
+}
+
+.box-cont-1,
+.box-cont-2,
+.box-cont-3,
+.box-cont-4 {
+  justify-content: space-between;
+  align-items: center;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+
+.select-sec > select {
+  /* align-items: center; */
+  background-color: rgba(56, 55, 55, 0.45);
+  border: 0.05px solid #bab8b8;
+  padding: 7px 15px;
+  font-size: 15px;
+  height: 32px;
+  color: #eee;
+  border-radius: 4px;
+  width: 130px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: -10px;
+}
+
+option {
+  background-color: #eee;
+  color: #000;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.select-sec > select {
+ position: relative;
+  appearance: none;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* .select-sec > select::-ms-expand {
+  display: none;
+} */
+
+.div-lang > svg {
+  justify-content: space-between;
+  position: relative;
+  left: 14px;
+  top: -20px;
+  z-index: 12;
+  display: inline;
+}
+
+.select-sec > .cont-arrow {
+  position: relative;
+  top: -40px;
+  left: 97px;
+  z-index: 12;
+  display: inline;
+}
+
+.cont-arrow .arropt{
+  display: inline;
+}
+
+.optionsContainer .option{
+  position: relative;
+  top: -20px;
+  bottom: 0px;
+  left: 14px;
+  right: 0px;
+  z-index: 12;
+  display: inline;
+  box-sizing: border-box;
+ 
+}
+
+#select-top{
+  display: inline;
+}
